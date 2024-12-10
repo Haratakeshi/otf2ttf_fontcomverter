@@ -2,6 +2,8 @@
 
 OTFフォントをTTFフォントに変換するWebアプリケーションです。
 
+フォントデータを変換してくれる類似のサービスは世の中にあふれてますが、ローカル環境で動かしたい＆自分用のツールが欲しかったので Anthropic Claude & CLINE / Cursor を利用してどこまで半自動で生成できるか試してみました。
+
 ## 必要条件
 
 - Node.js (v14以上)
@@ -12,7 +14,7 @@ OTFフォントをTTFフォントに変換するWebアプリケーションで�
 1. リポジトリをクローン
 ```bash
 git clone [repository-url]
-cd fontchanger
+cd otf2ttf_fontcomverter
 ```
 
 2. ルートディレクトリの依存パッケージをインストール（重要）
