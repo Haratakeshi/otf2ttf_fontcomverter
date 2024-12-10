@@ -1,0 +1,209 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  padding: 20px;
+}
+
+.converter-container {
+  background-color: #363b47;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.file-input-container {
+  margin: 20px 0;
+}
+
+.file-input-label {
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.file-input-label:hover {
+  background-color: #4fa8c9;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-info {
+  margin: 20px 0;
+}
+
+.convert-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.convert-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.convert-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin: 10px 0;
+}
+
+/* フォントプレビュー */
+.font-preview {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #2a2e38;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.font-preview h2 {
+  color: #61dafb;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.preview-input {
+  margin-bottom: 1.5rem;
+}
+
+.preview-input textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: #363b47;
+  border: 1px solid #4a4f5e;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.preview-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.preview-section {
+  background-color: #363b47;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.preview-section h3 {
+  color: #4fa8c9;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.preview-text {
+  white-space: pre-wrap;
+  padding: 1rem;
+  background-color: #2a2e38;
+  border-radius: 4px;
+  min-height: 150px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* 検証結果のスタイル */
+.verification-result {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #2a2e38;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.verification-result h2 {
+  color: #61dafb;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.verification-result h3 {
+  color: #4fa8c9;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.verification-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.verification-section {
+  background-color: #363b47;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.verification-section p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.verification-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+
+.verification-section li {
+  background-color: #2a2e38;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .verification-details,
+  .preview-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .converter-container {
+    width: 90%;
+    padding: 1rem;
+  }
+  
+  .preview-text {
+    font-size: 1rem;
+  }
+}
